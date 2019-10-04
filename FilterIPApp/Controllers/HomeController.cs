@@ -15,7 +15,7 @@ namespace FilterIPApp.Controllers
         }
 
         /* Filter resource attribute to create caching by ip*/
-        //[CacheResource]
+        [CacheResource]
         /* Filter action attribute to create whitelist by ip */
         [TypeFilter(typeof(IPAddressFilter))]
         public IActionResult Index()
